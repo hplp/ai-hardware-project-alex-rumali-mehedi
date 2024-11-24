@@ -1,7 +1,7 @@
 # AI_Hardware_Project
 
 ## Team Name: 
-(Enter your team name from Canvas)
+Team Sleep_Apnea
 
 ## Team Members:
 - Alexander Osei-Bonsu
@@ -31,4 +31,16 @@ Classifier: Linear Support Vector Machine (LSVM)
 - Detailed Performance metrics including accuracy, sensitivity, and resource utilization
 
 ## Timeline:
-(Provide a rough timeline or milestones for the project)
+Phase 1: Literature Review & Data Preparation
+
+Phase 2: Software Simulation
+- Implement preprocessing, feature extraction, and LSVM classification in MATLAB.
+- Optimize feature selection for high accuracy.
+
+Phase 3: Hardware Implementation
+- Map optimized LSVM parameters onto the FPGA board.
+- Validate feature extraction and classifier hardware blocks.
+
+Phase 4: Testing and Validation
+- Evaluate system performance on test datasets.
+- Measure hardware metrics like power consumption and resource utilization.
