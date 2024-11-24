@@ -21,7 +21,9 @@ This project addresses the prevalent issue of sleep apnea, a disorder causing in
 
 ## Technology Stack:
 Hardware: 
+
 Software Tools: MATLAB, Xilinx Vivado Design Suite
+
 Classifier: Linear Support Vector Machine (LSVM)
 
 ## Expected Outcomes:
