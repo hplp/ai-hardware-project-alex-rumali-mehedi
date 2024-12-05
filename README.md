@@ -20,7 +20,7 @@ This project addresses the prevalent issue of sleep apnea, a disorder causing in
 - Minimize the utilization of FPGA resources (e.g., LUTs, slice registers, DSPs) while maintaining performance to allow cost-effective implementations
 
 ## Technology Stack:
-Hardware: 
+Hardware: NEXYS 4 Equipped with Xilinx Artix-7 FPGA
 
 Software Tools: MATLAB, Xilinx Vivado Design Suite
 
