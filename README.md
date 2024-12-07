@@ -9,7 +9,7 @@ Team Sleep_Apnea
 - Mehedi Hasan
 
 ## Project Title:
-An Energy-Efficient FPGA-Based Sleep Apnea Detection System
+FPGA-Based Sleep Apnea Detection System
 
 ## Project Description:
 This project addresses the prevalent issue of sleep apnea, a disorder causing interruptions in breathing during sleep, which impacts health significantly. The project focuses on developing an energy-efficient hardware system for real-time detection of sleep apnea using EEG signals. By leveraging specific EEG signal features and a Linear Support Vector Machine (LSVM) classifier, the system aims to provide high accuracy, sensitivity, and specificity while maintaining low power consumption.
