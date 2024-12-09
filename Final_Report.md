@@ -16,7 +16,7 @@ The preprocessing step ensures that the EEG signals are clean, artifact-free, an
 
 ## Software: Model Development and Training
 
-## Feature Extraction and Ranking
+## Feature Extraction
 Feature extraction is a crucial step where meaningful characteristics are derived from the filtered and decomposed EEG signals. The following features are computed from the five EEG frequency bands (Delta, Theta, Alpha, Sigma, and Beta):
 
 - Energy: Represents the signal's power within each frequency band.
