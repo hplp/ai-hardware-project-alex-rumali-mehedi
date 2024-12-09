@@ -40,3 +40,24 @@ The hardware implementation translates the software-based model into an FPGA-com
 <p align="middle">
 <img src="Hardware_Implementation.jpg">
 </p>
+
+## Feature Extractor Block
+The Feature Extractor Block processes the preprocessed EEG signals to compute the key features (F1, F2, F3, F4) in real-time. This block is responsible for replicating the feature extraction logic used in the software model. The FPGA is programmed to calculate features like energy, kurtosis, and mobility from the input EEG signals. These features are then passed to the Trained Classifier Block, which implements the SVM model using the exported parameters. 
+
+## Trained Classifier Block
+The trained parameters from the SVM model exported during the software development phase are integrated into this block. The classifier uses the extracted features (F1, F2, F3, F4) to perform binary classification, identifying whether an event is apnea (1) or non-apnea (0). The hardware implementation ensures that the classifier operates with the same accuracy and efficiency as its software counterpart.
+
+## Finite State Machine (FSM) Controller
+To manage the data flow and processing states, a Finite State Machine (FSM) controller is employed. It coordinates the operations of the feature extractor and classifier, ensuring efficient execution. 
+
+## FPGA Implementation
+The hardware system is implemented on NEXYS 4 Equipped with Xilinx Artix-7 FPGA, chosen for its flexibility, low power consumption, and suitability for real-time processing. The design is implemented using Verilog HDL ensuring a precise and efficient representation of the system logic. 
+
+## Testing
+The preprocessed EEG signals from the dataset are fed into the FPGA to test the system. The hardware output (apnea or non-apnea) is compared with the ground truth labels from the dataset to validate its accuracy. 
+
+## Performance Analysis
+The system's performance was evaluated using accuracy, sensitivity, and specificity metrics. These metrics were computed for individual subjects and across subjects to ensure the system's reliability and robustness.
+
+## Hardware Setup Steps:
+
