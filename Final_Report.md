@@ -36,3 +36,7 @@ Once the SVM classifier is trained and validated, the key parameters (support ve
 
 ## Hardware: Implementation and Testing
 The hardware implementation translates the software-based model into an FPGA-compatible design. This stage consists of two main blocks: the Feature Extractor Block and the Trained Classifier Block.
+
+<p align="middle">
+<img src="Hardware_Implementation.jpg">
+</p>
