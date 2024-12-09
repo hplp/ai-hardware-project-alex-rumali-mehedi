@@ -15,9 +15,9 @@ FPGA-Based Sleep Apnea Detection System
 This project addresses the prevalent issue of sleep apnea, a disorder causing interruptions in breathing during sleep, which impacts health significantly. The project focuses on developing an energy-efficient hardware system for real-time detection of sleep apnea using EEG signals. By leveraging specific EEG signal features and a Linear Support Vector Machine (LSVM) classifier, the system aims to provide high accuracy, sensitivity, and specificity while maintaining low power consumption.
 
 ## Key Objectives:
-- Implement a low-power hardware design optimized for minimal dynamic power consumption
-- Achieve latency reduction to enable real-time processing of EEG signals for immediate detection and feedback
-- Minimize the utilization of FPGA resources (e.g., LUTs, slice registers, DSPs) while maintaining performance to allow cost-effective implementations
+- Develop software model for Sleep Apnea Detection
+- Implement the software model in Nexys 4 FPGA board
+- Achieve high performance in terms of Accuracy, Sensitivity and Specificity
 
 ## Technology Stack:
 Hardware: NEXYS 4 Equipped with Xilinx Artix-7 FPGA
