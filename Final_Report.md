@@ -17,9 +17,11 @@ The preprocessing step ensures that the EEG signals are clean, artifact-free, an
 
 ## Feature Extraction and Ranking
 Feature extraction is a crucial step where meaningful characteristics are derived from the filtered and decomposed EEG signals. The following features are computed from the five EEG frequency bands (Delta, Theta, Alpha, Sigma, and Beta):
-Energy: Represents the signal's power within each frequency band.
-Kurtosis: Captures the sharpness or "peakedness" of the EEG waveforms.
-Mobility: Measures the variability in signal amplitude over time.
+
+- Energy: Represents the signal's power within each frequency band.
+- Kurtosis: Captures the sharpness or "peakedness" of the EEG waveforms.
+- Mobility: Measures the variability in signal amplitude over time.
+- 
 The preprocessed EEG signals undergo feature extraction to derive key attributes (F1, F2, F3, F4) that are critical for apnea classification. These features include metrics such as signal amplitude, frequency domain characteristics, and entropy, which are ranked using statistical methods to identify the most informative ones. 
 
 ## Classification 
