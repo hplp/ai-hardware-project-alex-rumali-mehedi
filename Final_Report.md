@@ -28,3 +28,6 @@ Once the model is optimized, its parameters, including weights and decision boun
 
 ## Exporting Trained Model Parameters
 Once the SVM classifier is trained and validated, the key parameters (support vectors, coefficients, and biases) are exported. These parameters are later used in the hardware implementation stage to replicate the classification logic on FPGA hardware. 
+
+## Hardware: Implementation and Testing
+The hardware implementation translates the software-based model into an FPGA-compatible design. This stage consists of two main blocks: the Feature Extractor Block and the Trained Classifier Block.
