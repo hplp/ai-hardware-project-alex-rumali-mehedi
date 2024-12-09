@@ -25,7 +25,20 @@ Feature extraction is a crucial step where meaningful characteristics are derive
 The preprocessed EEG signals undergo feature extraction to derive key attributes (F1, F2, F3, F4) that are critical for apnea classification. These features include metrics such as signal amplitude, frequency domain characteristics, and entropy, which are ranked using statistical methods to identify the most informative ones. 
 
 ## ML Classifier Selection 
-Six basic classifiers are selected to differentiate apnea from non-apnea incidents. The classifiers used were Ensemble (Bagged Trees), Ensemble (Subspace Discriminant), Linear SVM, SVM (Medium Gaussian), and Weighted K-nearest Neighbor. Among them, Linear SVM demonstrated the best performance in terms of accuracy, sensitivity, and specificity. Linear SVM is particularly suited for linearly separable datasets, and it operates effectively for both classification and regression analysis, with its performance heavily reliant on the weight and bias parameters that define the hyperplane's position and orientation.
+Six basic classifiers are selected to differentiate apnea from non-apnea incidents. The classifiers used were Ensemble (Bagged Trees), Ensemble (Subspace Discriminant), Linear SVM, SVM (Medium Gaussian), and Weighted K-nearest Neighbor. Among them, Linear SVM demonstrated the best performance in terms of accuracy, sensitivity, and specificity (Table 1).
+
+Table 1. Classifier Performance
+
+| No. | Classifier | Accuracy (%) | Sensitivity (%) | Specificity (%) |
+|------------------|-----------------|------------------|------------------|------------------|
+| 1      | Ensemble (Bagged Trees)    | 93.58     | 92.42     | 91.42     |
+| 2    | Linear SVM    | 94.81     | 93.10     | 96.43     |
+| 3     | Ensemble (subspace discriminant)    | 93.38     | 90.44     | 94.24      |
+| 4     | SVM (Medium Gaussian)    | 93.64     | 90.56     | 89.82     |
+| 5     | Weighted KNN     | 93.28     | 89.80     | 89.40     |
+| 6     | ANN    | 93.88     | 92.5     | 95.56     |
+
+
 
 ## LSVM Classifier
 The core of the model development process is the Support Vector Machine (SVM) Classifier. The features are then fed into a Support Vector Machine (SVM) classifier, which is trained to distinguish between apnea and non-apnea events. The training process involves using labeled datasets with a diverse set of EEG recordings, ensuring robust model performance. 
