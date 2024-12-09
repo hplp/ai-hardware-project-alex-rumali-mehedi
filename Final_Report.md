@@ -24,7 +24,7 @@ Feature extraction is a crucial step where meaningful characteristics are derive
   
 The preprocessed EEG signals undergo feature extraction to derive key attributes (F1, F2, F3, F4) that are critical for apnea classification. These features include metrics such as signal amplitude, frequency domain characteristics, and entropy, which are ranked using statistical methods to identify the most informative ones. 
 
-## Classification 
+## Classifier Selection 
 Six basic classifiers are selected to differentiate apnea from non-apnea incidents. The classifiers used were Ensemble (Bagged Trees), Ensemble (Subspace Discriminant), Linear SVM, SVM (Medium Gaussian), and Weighted K-nearest Neighbor. Among them, Linear SVM demonstrated the best performance in terms of accuracy, sensitivity, and specificity. Linear SVM is particularly suited for linearly separable datasets, and it operates effectively for both classification and regression analysis, with its performance heavily reliant on the weight and bias parameters that define the hyperplane's position and orientation.
 
 ## SVM Classifier
