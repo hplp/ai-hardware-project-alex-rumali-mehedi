@@ -97,7 +97,8 @@ Fig. 5. Hardware Implementation
 The trained parameters from the SVM model exported during the software development phase are integrated into this block. The classifier uses the extracted features (F1, F2, F3, F4) to perform binary classification, identifying whether an event is apnea (1) or non-apnea (0). The hardware implementation ensures that the classifier operates with the same accuracy and efficiency as its software counterpart.
 
 ## FPGA Implementation Process
-The hardware system is implemented on NEXYS 4 Equipped with Xilinx Artix-7 FPGA, chosen for its flexibility, low power consumption, and suitability for real-time processing. The design is implemented using Verilog HDL ensuring a precise and efficient representation of the system logic. 
+The hardware system is implemented on NEXYS 4 Equipped with Xilinx Artix-7 FPGA, chosen for its flexibility, low power consumption, and suitability for real-time processing. The design is implemented using Verilog HDL ensuring a precise and efficient representation of the system logic. All Verilog HDL code files are located in the [Hardware Design Files](./Hardware%20Design%20File/)
+ folder of the repository. 
 
 For hardware setup, at first we need to open a Project in Xilinx Vivado. We need to set the target FPGA board (Nexys 4) at this stage, as shown in Fig. 6. The top module for the project is the file named as reading_bramdata_display_wrapper. 
 
