@@ -201,3 +201,6 @@ Table 2. Performance of the implemented design
 ## Conclusion and Future Work
 The main objective of Sleep Apnea detection has been achieved successfully both in terms of software and hardware implementation. Obtained results from Software and Hardware parts are promising. Future work on this project can be figuring out more robust models for data training, in order to achieve better accuracy. Moreover, further work needs to be done to reduce the performance gap between software and hardware counterparts.
 
+Demo Video [Link](https://drive.google.com/file/d/1rYNZqFusiaxiN44hcKOw3OOo-nI2DZbX/view?usp=sharing)
+
+
