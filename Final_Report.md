@@ -1,5 +1,13 @@
 # FPGA-Based Sleep Apnea Detection System
 
+## Team Name: 
+Team Sleep_Apnea
+
+## Team Members:
+- Mehedi Hasan
+- Rumali Siddiqua
+- Alexander Osei-Bonsu
+
 ## Project Description
 
 Sleep apnea is a prevalent sleep disorder characterized by interruptions in breathing during sleep, significantly affecting overall health and quality of life. Traditional methods of apnea detection often rely on software-intensive approaches, which are computationally expensive and unsuitable for real-time, portable applications. The project focuses on developing a hardware system for real-time detection of sleep apnea using EEG signals. By leveraging specific EEG signal features and a Linear Support Vector Machine (LSVM) classifier, the system aims to provide high accuracy, sensitivity, and specificity.
@@ -15,6 +23,9 @@ Hardware: NEXYS 4 Equipped with Xilinx Artix-7 FPGA
 Software Tools: MATLAB, Xilinx Vivado Design Suite
 
 Classifier: Linear Support Vector Machine (LSVM)
+
+Data Source: [St. Vincent’s UCDDB PhysioNet EEG database](https://physionet.org/content/ucddb/1.0.0/)
+
 
 <p align="middle">
 <img src="FPGA.png">
