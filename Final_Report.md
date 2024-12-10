@@ -116,6 +116,9 @@ Schematic of the implemented design in Xilinx Vivado is shown in Fig. 7. From th
 </p>
 Fig.7. Vivado Schematic
 
+<br>
+<br>
+
 Configuration to the Block RAM IP is depicted using Fig. 8. To attach the Input Data file, we need to navigate to the “Other Option”, and browse the Data File, as shown in Fig. 8.
 
 <p align="middle">
@@ -151,11 +154,47 @@ Fig.10. FPGA output testing
 Results obtained from software and hardware implementation are shown in Table 2. From the results, we can see that there is a performance difference between software and FPGA implemented results. In MATLAB testing, we can consider fraction values of weights, bias and feature data. However, for FPGA implementation, we were only sending the integer values, truncating the fractional parts of the weights, bias and feature data. Due to this reason, we are missing some information of the trained parameters while doing FPGA implementation. This is the main reason behind the slight decrease in performance parameters from the FPGA output.
 
 Table 2. Performance of the implemented design
+<table>
+  <tr>
+    <th colspan="2">Accuracy (%)</th>
+  </tr>
+  <tr>
+    <td>MATLAB</td>
+    <td>FPGA</td>
+  </tr>
+  <tr>
+    <td>94.81</td>
+    <td>91.13</td>
+  </tr>
+</table>
 
-| Accuracy (%)   |           | Sensitivity (%) |           | Specificity (%) |           |
-|----------------|-----------|-----------------|-----------|-----------------|-----------|
-|               | Matlab    | FPGA            | Matlab    | FPGA            | Matlab    | FPGA  |
-| Value         | 94.81     | 91.13           |91%.|etc row
+<table>
+  <tr>
+    <th colspan="2">Sensitivity (%)</th>
+  </tr>
+  <tr>
+    <td>MATLAB</td>
+    <td>FPGA</td>
+  </tr>
+  <tr>
+    <td>93.10</td>
+    <td>86.24</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="2">Specificity (%)</th>
+  </tr>
+  <tr>
+    <td>MATLAB</td>
+    <td>FPGA</td>
+  </tr>
+  <tr>
+    <td>96.43</td>
+    <td>96.2</td>
+  </tr>
+</table>
 
 ## Conclusion and Future Work
 The main objective of Sleep Apnea detection has been achieved successfully both in terms of software and hardware implementation. Obtained results from Software and Hardware parts are promising. Future work on this project can be figuring out more robust models for data training, in order to achieve better accuracy. Moreover, further work needs to be done to reduce the performance gap between software and hardware counterparts.
