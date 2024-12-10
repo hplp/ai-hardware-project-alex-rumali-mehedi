@@ -73,7 +73,8 @@ The core of the model development process is the Support Vector Machine (SVM) Cl
 
 In this project, 80% of the collected EEG data was allocated for the training phase, while the remaining 20% was reserved for testing, ensuring data separation for robust model evaluation. During the testing phase, the EEG feature set was classified into two categories: apnea and non-apnea. Cross-validation is employed to prevent overfitting and to validate the classifier’s accuracy. This involved computing metrics such as accuracy, sensitivity, and specificity for individual subjects. 
 
-Once the model is optimized, its parameters, including weights and decision boundaries, are exported for hardware implementation. The software stage ensures the model achieves high accuracy and reliability before transitioning to hardware. The model is developed and trained in MATLAB.
+Once the model is optimized, its parameters, including weights and decision boundaries, are exported for hardware implementation. The software stage ensures the model achieves high accuracy and reliability before transitioning to hardware. The model is developed and trained in MATLAB. The MATLAB code file is located in the [MATLAB Code](./MATLAB%20Code/)
+folder of the repository. 
 
 We need to open MATLAB, click on the Apps section, navigate towards the Machine Learning and Deep Learning sub-section, and select Classifier Learner. A window as shown in Fig. 4 will pop-up. In this window, we can create a new session, upload data files, perform model training, get trained models, and conduct testing.
 
