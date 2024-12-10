@@ -12,12 +12,12 @@ Team Sleep_Apnea
 
 Sleep apnea is a prevalent sleep disorder characterized by interruptions in breathing during sleep, significantly affecting overall health and quality of life. Traditional methods of apnea detection often rely on software-intensive approaches, which are computationally expensive and unsuitable for real-time, portable applications. The project focuses on developing a hardware system for real-time detection of sleep apnea using EEG signals. By leveraging specific EEG signal features and a Linear Support Vector Machine (LSVM) classifier, the system aims to provide high accuracy, sensitivity, and specificity.
 
-## Key Objectives:
+## Key Objectives
 - Develop software model for Sleep Apnea Detection
 - Implement the software model in Nexys 4 FPGA board
 - Achieve high performance in terms of Accuracy, Sensitivity and Specificity
 
-## Technology Stack:
+## Technology Stack
 Hardware: NEXYS 4 Equipped with Xilinx Artix-7 FPGA
 
 Software Tools: MATLAB, Xilinx Vivado Design Suite
