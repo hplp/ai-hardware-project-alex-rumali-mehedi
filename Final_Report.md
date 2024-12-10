@@ -48,7 +48,8 @@ The dataset used for this project is derived from the PhysioNet St. Vincent’s 
 
 ## Data Preprocessing
 The raw signals often contain noise and artifacts originating from various sources, such as eye movements, eye blinks, sweating, and body movements. To address this, a preprocessing pipeline is employed that includes filtering and band decomposition. A Butterworth band pass filter is specifically employed at the input of the EEG signal to exclusively address the baseline artefact. Filters remove high-frequency noise and unwanted artifacts, while band decomposition isolates specific EEG frequency bands (Delta, Theta, Alpha, Beta) known to correlate with sleep apnea events. By isolating these frequency bands, more distinct features can be extracted compared to analyzing the entire EEG signal, thus enhancing classification accuracy.
-The preprocessing step ensures that the EEG signals are clean, artifact-free, and segmented into meaningful frequency bands. Preprocessing is implemented in MATLAB. 
+The preprocessing step ensures that the EEG signals are clean, artifact-free, and segmented into meaningful frequency bands. Preprocessing is implemented in MATLAB. The MATLAB code file is located in the [MATLAB Code](./MATLAB%20Code/)
+folder of the repository. 
 
 ## Feature Extraction
 Feature extraction is a crucial step where meaningful characteristics are derived from the filtered and decomposed EEG signals. The Kruskal-Walli’s test is employed to rank features and determine their relevance to sleep apnea. Ultimately, the four top-ranked features, namely energy beta, kurtosis delta, mobility delta, and mobility beta, are chosen as inputs to the subsequent classifier block. Fig. 3 presents the graphical representation of the feature vectors belonging to the apnea and non-apnea class. As it can be inferred from the plot the features are not much overlapping. 
@@ -84,8 +85,7 @@ The core of the model development process is the Support Vector Machine (SVM) Cl
 
 In this project, 80% of the collected EEG data was allocated for the training phase, while the remaining 20% was reserved for testing, ensuring data separation for robust model evaluation. During the testing phase, the EEG feature set was classified into two categories: apnea and non-apnea. Cross-validation is employed to prevent overfitting and to validate the classifier’s accuracy. This involved computing metrics such as accuracy, sensitivity, and specificity for individual subjects. 
 
-Once the model is optimized, its parameters, including weights and decision boundaries, are exported for hardware implementation. The software stage ensures the model achieves high accuracy and reliability before transitioning to hardware. The model is developed and trained in MATLAB. The MATLAB code file is located in the [MATLAB Code](./MATLAB%20Code/)
-folder of the repository. 
+Once the model is optimized, its parameters, including weights and decision boundaries, are exported for hardware implementation. The software stage ensures the model achieves high accuracy and reliability before transitioning to hardware. The model is developed and trained in MATLAB. 
 
 We need to open MATLAB, click on the Apps section, navigate towards the Machine Learning and Deep Learning sub-section, and select Classifier Learner. A window as shown in Fig. 4 will pop-up. In this window, we can create a new session, upload data files, perform model training, get trained models, and conduct testing.
 
